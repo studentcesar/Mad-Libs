@@ -10,4 +10,6 @@
     <string name="word_count"></string>
     <string name="your_story">Your Mad Lib Story</string>
     <string name="back_button">make another story</string>
+    <string name="choose_title">Choose your story!</string>
+    <string name="lets_go">play!</string>
 </resources>
