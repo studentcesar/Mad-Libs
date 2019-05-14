@@ -19,16 +19,16 @@ public class Activity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_2);
 
-        // if savedInstanceState is empty, create new Story
 
-        if (savedInstanceState == null) {
-            // construct story
-            InputStream is = getResources().openRawResource(R.raw.madlib0_simple);
-            story = new Story(is);
-        }
-        else{
-            story = (Story) savedInstanceState.getSerializable("story");
-        }
+
+
+
+        Intent intent = getIntent();
+
+        story = (Story) intent.getSerializableExtra("chosenStory");
+
+
+
 
         text = (EditText) findViewById(R.id.edit_text);
 
